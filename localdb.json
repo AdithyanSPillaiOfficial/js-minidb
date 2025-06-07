@@ -1,0 +1,19 @@
+{
+  "myserver": {
+    "tickets": []
+  },
+  "ScriptX": {
+    "ticket": [
+      {
+        "user": "Dex Byte",
+        "description": "I need help",
+        "_id": "mbmjmlcxhby9qy1yz1f"
+      },
+      {
+        "user": "Adithyan S Pillai",
+        "description": "Bug Report",
+        "_id": "mbmjmld32i2xf9ij0p5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "simple-node-db",
+  "version": "1.0.0",
+  "description": "A simple file based database system, that can be created just by installing this package ( No setup required )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "db",
+    "database",
+    "simple",
+    "database",
+    "javascript",
+    "database"
+  ],
+  "author": "Adithyan S Pillai",
+  "license": "ISC"
+}
