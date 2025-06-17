@@ -1,7 +1,7 @@
 
-# simple-node-db
+# js-minidb
 
-A lightweight, zero-dependency, JSON-based local database for Node.js projects. Inspired by MongoDB, `simple-node-db` offers an intuitive API for managing databases, collections, and documents — all stored in a single JSON file on your disk.
+A lightweight, zero-dependency, JSON-based local database for Node.js projects. Inspired by MongoDB, `js-minidb` offers an intuitive API for managing databases, collections, and documents — all stored in a single JSON file on your disk.
 
 Perfect for CLI tools, prototypes, small-scale applications, offline-first apps, or any use case where simplicity and local persistence matter.
 
@@ -29,7 +29,7 @@ Perfect for CLI tools, prototypes, small-scale applications, offline-first apps,
 ## 📦 Installation
 
 ```bash
-npm install simple-node-db
+npm install js-minidb
 
 ```
 
@@ -75,7 +75,7 @@ Example structure:
 ### 1. Import the module
 
 ```js
-const db = require('simple-node-db');
+const db = require('js-minidb');
 
 ```
 
@@ -255,7 +255,7 @@ Manually creates collection
 ## 🧪 Example Project
 
 ```js
-const db = require('simple-node-db');
+const db = require('js-minidb');
 
 // Insert users
 db.insertOne('usersDB', 'users', { username: 'john', age: 22 });
@@ -295,7 +295,7 @@ db.deleteOne('usersDB', 'users', { username: 'jane' });
 ## 🧑‍💻 Author
 
 **Adithyan**  
-GitHub: [@adithyan1507](https://github.com/adithyan1507)
+GitHub: [@AdithyanSPillaiOfficial](https://github.com/AdithyanSPillaiOfficial)
 
 ----------
 
