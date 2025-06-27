@@ -94,6 +94,17 @@ db.insertOne('company', 'employees', { name: 'Alice', role: 'Engineer' });
 
 ----------
 
+### 📥 `insertMany(database, collection, arrayofobjects)`
+
+Inserts an array of documents.
+
+```js
+db.insertMany('usersDB', 'users', [{ username: 'jane', age: 30 }, { username: 'john', age: 22 }]);
+
+```
+
+----------
+
 ### 🔍 `find(database, collection, queryObject)`
 
 Finds all matching documents.
@@ -196,6 +207,10 @@ Description
 
 Adds a new document
 
+`insertMany(db, collection, objarr)`
+
+Adds an array of objects into the collection
+
 `find(db, collection, query)`
 
 Retrieves matching documents
@@ -260,6 +275,10 @@ const db = require('js-minidb');
 // Insert users
 db.insertOne('usersDB', 'users', { username: 'john', age: 22 });
 db.insertOne('usersDB', 'users', { username: 'jane', age: 30 });
+
+//insert many
+db.insertMany('usersDB', 'users', [{ username: 'jane', age: 30 }, { username: 'john', age: 22 }]);
+
 
 // Update one
 db.updateOne('usersDB', 'users', { username: 'john' }, { age: 23 });

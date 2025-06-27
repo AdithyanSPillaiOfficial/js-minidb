@@ -56,6 +56,17 @@ function insertOne(dbName, collectionName, doc) {
     return doc._id;
 }
 
+function insertMany(dbName, collectionName, arr) {
+    const db = loadDB();
+    ensurePath(db, dbName, collectionName);
+
+    const insarr = arr.map(element => ({...element, _id : Date.now().toString(36) + Math.random().toString(36).slice(2)}))
+    db[dbName][collectionName].push(...insarr);
+    saveDB(db);
+
+    return true
+}
+
 // Find documents (auto-creates if missing)
 function find(dbName, collectionName, query = {}) {
     const db = loadDB();
