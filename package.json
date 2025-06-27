@@ -1,6 +1,6 @@
 {
   "name": "js-minidb",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple file based database system, that can be created just by installing this package ( No setup required )",
   "main": "index.js",
   "repository": {
