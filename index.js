@@ -172,6 +172,7 @@ module.exports = {
     createDatabase,
     createCollection,
     insertOne,
+    insertMany,
     find,
     deleteOne,
     updateOne,
