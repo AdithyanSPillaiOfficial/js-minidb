@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const DB_FILE = path.join(__dirname, 'localdb.json');
+// const DB_FILE = path.join(__dirname, 'localdb.json');
+const DB_FILE = path.join(process.cwd(), 'localdb.json');
+
 
 function loadDB() {
     if (!fs.existsSync(DB_FILE)) {
