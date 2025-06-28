@@ -51,7 +51,9 @@ function insertOne(dbName, collectionName, doc) {
     const db = loadDB();
     ensurePath(db, dbName, collectionName);
 
-    doc._id = Date.now().toString(36) + Math.random().toString(36).slice(2);
+    if(doc._id === undefined) {
+        doc._id = Date.now().toString(36) + Math.random().toString(36).slice(2);
+    }
     db[dbName][collectionName].push(doc);
     saveDB(db);
 
@@ -62,7 +64,7 @@ function insertMany(dbName, collectionName, arr) {
     const db = loadDB();
     ensurePath(db, dbName, collectionName);
 
-    const insarr = arr.map(element => ({...element, _id : Date.now().toString(36) + Math.random().toString(36).slice(2)}))
+    const insarr = arr.map(element => ({...element, _id : element._id ? element._id : Date.now().toString(36) + Math.random().toString(36).slice(2)}))
     db[dbName][collectionName].push(...insarr);
     saveDB(db);
 
